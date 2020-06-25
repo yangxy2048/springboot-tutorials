@@ -1,0 +1,113 @@
+#数据库配置
+datasource:
+    driverName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://58.215.173.177:6309/MerchantAccount?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=CTT
+    userName: payment
+    password: 6qpxxKxZxY
+
+###全局配置
+global:
+    #项目地址
+    outputDir: /Users/devinyang/Downloads/shopline/gen/
+    #是否覆盖已有文件
+    fileOverride: true
+    #是否打开输出目录
+    open: true
+    #xml是否配置缓存
+    enableCache: false
+    #开发人员
+    author: DevinYang
+    # 开启 Kotlin 模式
+    kotlin: true
+    #开启 ActiveRecord 模式
+    activeRecord: true
+    #开启 BaseResultMap
+    baseResultMap: true
+    # 开启 baseColumnList
+    baseColumnList: true
+    #各层文件名称方式，例如： %Action 生成 UserAction
+    mapperName:
+    xmlName:
+    serviceName:
+    serviceImplName:
+    controllerName:
+    # 指定生成的主键的ID类型
+    idType: 0
+
+#策略配置
+strategy:
+    #是否大写命名
+    capitalMode: false
+    #是否跳过视图
+    skipView: false
+    #数据库表映射到实体的命名策略
+    naming: underline_to_camel
+    #表前缀（多个值逗号分割）
+    tablePrefix: sys_
+    #字段前缀（多个值逗号分割）
+    fieldPrefix:
+    #自定义继承的Entity类全称，带包名
+    superEntityClass: com.baomidou.mybatisplus.extension.activerecord.Model
+    #自定义基础的Entity类，公共字段
+    superEntityColumns:
+    #自定义继承的Mapper类全称，带包名
+    superMapperClass: com.baomidou.mybatisplus.core.mapper.BaseMapper
+    #自定义继承的Service类全称，带包名
+    superServiceClass: com.baomidou.mybatisplus.extension.service.IService
+    #自定义继承的ServiceImpl类全称，带包名
+    superServiceImplClass: com.baomidou.mybatisplus.extension.service.impl.ServiceImpl
+    #自定义继承的Controller类全称，带包名
+    superControllerClass:
+    #需要包含的表名（与exclude二选一配置）
+    include:
+    #需要排除的表名
+    exclude:
+    #【实体】是否生成字段常量（默认 false）
+    entityColumnConstant: false
+    #【实体】是否为构建者模型（默认 false）
+    entityBuilderModel: false
+    #【实体】是否为lombok模型（默认 false）
+    entityLombokModel: true
+    # Boolean类型字段是否移除is前缀（默认 false）
+    entityBooleanColumnRemoveIsPrefix: true
+    #生成 <code>@RestController</code> 控制器
+    restControllerStyle: true
+    #驼峰转连字符
+    controllerMappingHyphenStyle: false
+    #是否生成实体时，生成字段注解
+    entityTableFieldAnnotationEnable: false
+    #乐观锁属性名称
+    versionFieldName:
+    #逻辑删除属性名称
+    logicDeleteFieldName:
+
+#
+packages:
+    #父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
+    parent: com.yy.paymentacceptance.merchantaccount
+    # 父包模块名。
+    moduleName:
+    #Entity包名
+    entity: entity
+    #Service包
+    service: service
+    #Service Impl包名
+    serviceImpl: service.impl
+    #Mapper包名
+    mapper: mapper
+    #Mapper XML包名
+    xml: mapper.xml
+    #Controller包名
+    controller: controller
+
+switchs:
+    #控制器生成开关
+    controllerSwitch: false
+    #业务层生成开关
+    serviceSwitch: true
+    #mapper生成开关
+    mapperSwitch: true
+    #数据访问层开关
+    daoSwitch: true
+    #entity开关
+    entitySwitch: true
