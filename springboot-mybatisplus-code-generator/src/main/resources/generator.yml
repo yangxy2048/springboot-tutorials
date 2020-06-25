@@ -81,7 +81,7 @@ strategy:
     #逻辑删除属性名称
     logicDeleteFieldName:
 
-#
+#包配置
 packages:
     #父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
     parent: com.yy.paymentacceptance.merchantaccount

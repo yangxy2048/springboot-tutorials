@@ -38,7 +38,7 @@ public class DefaultGeneratorConfig extends AbstractGeneratorConfig {
          * 全局配置
          */
         XpGlobalConfig xpGlobalConfig = ret.getGlobal();
-        globalConfig.setOutputDir(xpGlobalConfig.getOutputDir()+ File.separator + "src" + File.separator + "main" + File.separator + "java");
+        globalConfig.setOutputDir(xpGlobalConfig.getOutputDir());
         globalConfig.setFileOverride(xpGlobalConfig.isFileOverride());
         globalConfig.setOpen(xpGlobalConfig.isOpen());
         globalConfig.setEnableCache(xpGlobalConfig.isEnableCache());
