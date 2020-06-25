@@ -1,14 +1,14 @@
 #数据库配置
 datasource:
-    driverName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://58.215.173.177:6309/MerchantAccount?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=CTT
-    userName: payment
-    password: 6qpxxKxZxY
+    driverName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/MerchantAccount?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=CTT
+    userName: root
+    password: 123456
 
 ###全局配置
 global:
     #项目地址
-    outputDir: /Users/devinyang/Downloads/shopline/gen/
+    outputDir: /Users/devinyang/Downloads/code/merchantaccount
     #是否覆盖已有文件
     fileOverride: true
     #是否打开输出目录
